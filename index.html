@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Igreja Evangélica Subindo Para Jesus — Acesso Pixoxo da Serra, 827, Balneário São José, SP. Cultos sexta, sábado e domingo.">
+  <title>Igreja Evangélica Subindo Para Jesus</title>
+  <link rel="icon" href="img/logo-spj.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="nav-brand">
+      <div class="nav-logo-circle">
+        <img src="img/logo-spj.png" alt="SPJ">
+      </div>
+      <div>
+        <span class="nav-brand-name">Subindo Para Jesus</span>
+        <span class="nav-brand-tag">Igreja Evangélica · SPJ</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#horarios">Horários</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#ministerios">Ministérios</a></li>
+      <li><a href="#colabore">Colabore</a></li>
+      <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#inicio" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg></div>
+      Início
+    </a>
+    <a href="#horarios" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
+        </svg></div>
+      Horários dos Cultos
+    </a>
+    <a href="#sobre" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        </svg></div>
+      Sobre a Igreja
+    </a>
+    <a href="#ministerios" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </svg></div>
+      Ministérios
+    </a>
+    <a href="#colabore" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <line x1="12" y1="1" x2="12" y2="23" />
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+        </svg></div>
+      Colabore
+    </a>
+    <a href="#contato" onclick="closeMenu()">
+      <div class="m-icon-box"><svg viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg></div>
+      Fale Conosco
+    </a>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-ring"></div>
+
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="ey-line"></span>
+          Bem-vindo à nossa família
+          <span class="ey-line"></span>
+        </div>
+        <h1 class="hero-title">
+          Igreja Evangélica
+          <em>Subindo Para Jesus</em>
+        </h1>
+        <p class="hero-sub">Uma comunidade de fé fundada na Palavra, movida pelo amor e guiada pelo Espírito Santo.</p>
+        <div class="hero-verse">
+          <p>"Buscai primeiro o reino de Deus e a sua justiça, e todas essas coisas vos serão acrescentadas."</p>
+          <cite>— Mateus 6:33</cite>
+        </div>
+        <div class="hero-btns">
+          <a href="#horarios" class="btn-ouro">Venha nos visitar</a>
+          <a href="#sobre" class="btn-outline">Conheça nossa história</a>
+        </div>
+      </div>
+
+      <div class="hero-logo-side">
+        <div class="hero-logo-wrap">
+          <img src="img/logo-spj.png" alt="Igreja Subindo Para Jesus" class="hero-logo-img">
+        </div>
+        <div class="hero-sigla">S · P · J</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+        <path d="M7 1v16M1 11l6 6 6-6" stroke="white" stroke-width="1.4" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      Role para baixo
+    </div>
+  </section>
+
+  <!-- ══════════ STRIP ENDEREÇO ══════════ -->
+  <div class="strip">
+    <div class="strip-item">
+      <div class="strip-ico">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+      </div>
+      <div>
+        <span class="strip-label">Endereço</span>
+        <span class="strip-val">Acesso Pixoxo da Serra, 827 — Balneário São José, SP</span>
+      </div>
+    </div>
+    <div class="strip-sep"></div>
+    <div class="strip-item">
+      <div class="strip-ico">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
+        </svg>
+      </div>
+      <div>
+        <span class="strip-label">Horários</span>
+        <span class="strip-val">Sexta 20h · Sábado 20h · Domingo 18h</span>
+      </div>
+    </div>
+    <div class="strip-sep"></div>
+    <div class="strip-item">
+      <div class="strip-ico">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </div>
+      <div>
+        <span class="strip-label">Contato</span>
+        <span class="strip-val" style="font-style:italic;color:rgba(255,255,255,.5);">Adicione seu WhatsApp aqui</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ HORÁRIOS ══════════ -->
+  <section class="horarios" id="horarios">
+    <div class="sec-wrap">
+      <div class="sec-eyebrow ey-dark reveal"><span>Programação Semanal</span></div>
+      <h2 class="sec-title t-dark reveal">Nossos <span>Cultos</span></h2>
+      <div class="horarios-grid">
+
+        <div class="hora-card reveal d1" data-dia="sexta">
+          <div class="hora-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M18.364 5.636a9 9 0 1 1-12.728 0" />
+              <line x1="12" y1="2" x2="12" y2="12" />
+            </svg>
+          </div>
+          <div class="hora-dia">Sexta-feira</div>
+          <div class="hora-nome">Culto Forte</div>
+          <div class="hora-info">
+            <span><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg> 20h00</span>
+            <span><svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Templo Principal</span>
+          </div>
+        </div>
+
+        <div class="hora-card reveal d2" data-dia="sabado">
+          <div class="hora-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <div class="hora-dia">Sábado</div>
+          <div class="hora-nome">Estudo Bíblico</div>
+          <div class="hora-info">
+            <span><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg> 20h00</span>
+            <span><svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Salão de Reuniões</span>
+          </div>
+        </div>
+
+        <div class="hora-card reveal d3" data-dia="domingo">
+          <div class="hora-ico">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <div class="hora-dia">Domingo</div>
+          <div class="hora-nome">Culto da Tarde</div>
+          <div class="hora-info">
+            <span><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg> 18h00</span>
+            <span><svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Templo Principal</span>
+          </div>
+        </div>
+
+        <div class="hora-card reveal d4" data-dia="domingo-kids">
+          <div class="hora-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="hora-dia">Domingo</div>
+          <div class="hora-nome">Salinha das Crianças</div>
+          <div class="hora-info">
+            <span><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg> Durante o Culto</span>
+            <span><svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Sala Infantil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ BANNER VERSÍCULO ══════════ -->
+  <div class="banner-v">
+    <div class="gold-bar"></div>
+    <p class="banner-v-quote reveal">"Alegrei-me quando me disseram: Vamos à casa do Senhor."</p>
+    <div class="gold-bar"></div>
+    <p class="banner-v-ref reveal">Salmos 122:1</p>
+  </div>
+
+  <!-- ══════════ SOBRE ══════════ -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-grid">
+
+      <div class="reveal">
+        <div class="sobre-frame">
+          <img src="img/logo-spj.png" alt="Igreja SPJ" class="sobre-logo">
+        </div>
+        <div class="sobre-badge">
+          <span class="s">SPJ</span>
+          <span class="t">Subindo<br>Para Jesus</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="sobre-ey reveal">Quem somos</span>
+        <h2 class="sobre-title reveal">Uma Igreja que <span>Transforma</span> Vidas</h2>
+        <p class="sobre-desc reveal">A Igreja Evangélica Subindo Para Jesus está localizada no Acesso Pixoxo da Serra,
+          827, em Balneário São José — SP. Somos uma comunidade de fé acolhedora, comprometida com a Palavra de Deus e
+          com o crescimento espiritual de cada pessoa.</p>
+        <p class="sobre-desc reveal">Com uma família de aproximadamente 50 membros, cada pessoa é amada, acolhida e
+          encorajada a crescer na fé e servir a Deus com seus dons.</p>
+        <div class="values-grid">
+          <div class="val-card reveal d1">
+            <div class="val-ico"><svg viewBox="0 0 24 24">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg></div>
+            <div><span class="val-name">Palavra Viva</span><span class="val-desc">Fundados na Bíblia Sagrada</span>
+            </div>
+          </div>
+          <div class="val-card reveal d2">
+            <div class="val-ico"><svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg></div>
+            <div><span class="val-name">Espírito Santo</span><span class="val-desc">Guiados pelo Senhor</span></div>
+          </div>
+          <div class="val-card reveal d3">
+            <div class="val-ico"><svg viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></div>
+            <div><span class="val-name">Amor &amp; Comunhão</span><span class="val-desc">Uma família unida em
+                Cristo</span></div>
+          </div>
+          <div class="val-card reveal d4">
+            <div class="val-ico"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg></div>
+            <div><span class="val-name">Missões</span><span class="val-desc">Levando o evangelho adiante</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-container reveal" style="margin-top: 60px;">
+      <div class="carousel-track">
+        <img src="img/IMG_2082.jpg" class="carousel-slide active-slide" alt="Igreja">
+        <img src="img/igreja1.jpg" class="carousel-slide" alt="Igreja 1">
+        <img src="img/igreja2.jpg" class="carousel-slide" alt="Igreja 2">
+        <img src="img/igreja3.jpg" class="carousel-slide" alt="Igreja 3">
+        <img src="img/igreja4.jpg" class="carousel-slide" alt="Igreja 4">
+        <img src="img/igreja5.jpg" class="carousel-slide" alt="Igreja 5">
+        <img src="img/IMG_2133.jpg" class="carousel-slide" alt="Igreja 5">
+        <img src="img/IMG_2455.jpg" class="carousel-slide" alt="Igreja 5">
+      </div>
+      <button class="carousel-btn prev-btn" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-btn next-btn" aria-label="Próximo">&#10095;</button>
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ MINISTÉRIOS ══════════ -->
+  <section class="ministerios" id="ministerios">
+    <div class="sec-wrap">
+      <div class="sec-eyebrow ey-light reveal"><span>Nossos Grupos</span></div>
+      <h2 class="sec-title t-light reveal">Ministérios da <span>Igreja</span></h2>
+      <div class="min-grid">
+        <div class="min-card reveal d1">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <path d="M9 18V5l12-2v13" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" />
+            </svg></div>
+          <div class="min-nome">Louvor</div>
+          <div class="min-desc">Ministério de adoração e música que conduz a congregação à presença de Deus</div>
+        </div>
+        <div class="min-card reveal d2">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <div class="min-nome">Crianças</div>
+          <div class="min-desc">Salinha com ensino bíblico especial para as crianças durante o culto dominical</div>
+        </div>
+        <div class="min-card reveal d3">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg></div>
+          <div class="min-nome">Jovens</div>
+          <div class="min-desc">Comunidade jovem vibrante, conectada com Deus e com propósito de vida</div>
+        </div>
+        <div class="min-card reveal d4">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="7" />
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+            </svg></div>
+          <div class="min-nome">Mulheres</div>
+          <div class="min-desc">Grupo de mulheres guerreiras fortalecendo-se na fé, oração e comunhão</div>
+        </div>
+        <div class="min-card reveal d1">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg></div>
+          <div class="min-nome">Homens</div>
+          <div class="min-desc">Homens de Deus edificando-se e servindo com integridade e compromisso</div>
+        </div>
+        <div class="min-card reveal d2">
+          <div class="min-ico"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg></div>
+          <div class="min-nome">Missões</div>
+          <div class="min-desc">Apoio e envio para alcançar os que ainda não conhecem a Cristo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ COLABORE ══════════ -->
+  <section class="colabore" id="colabore">
+    <div class="col-grid">
+      <div>
+        <span class="col-ey reveal">Faça parte</span>
+        <h2 class="col-title reveal">Colabore com a <span>Obra de Deus</span></h2>
+        <p class="col-desc reveal">Sua oferta é um ato de adoração e fé. Cada contribuição sustenta e expande o Reino de
+          Deus através da nossa Igreja.</p>
+        <div class="col-list">
+          <div class="col-row reveal d1"><svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Manutenção e custeio do templo</div>
+          <div class="col-row reveal d2"><svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Apoio a famílias em necessidade</div>
+          <div class="col-row reveal d3"><svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Materiais para Escola Bíblica</div>
+          <div class="col-row reveal d4"><svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Missões e evangelismo</div>
+          <div class="col-row reveal"><svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Eventos e datas especiais</div>
+        </div>
+      </div>
+
+      <div class="pix-box reveal">
+        <div class="pix-title">Contribuir via Pix</div>
+        <div class="pix-qr-wrap">
+          <img src="img/PIX.jpeg" alt="QR Code PIX"
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+        </div>
+        <div class="pix-key-area">
+          <div class="pix-lbl">Chave Pix</div>
+          <!-- ⬇ SUBSTITUA PELA SUA CHAVE PIX REAL ⬇ -->
+          <div class="pix-val" id="pix-val">55.255.380/0001-05</div>
+        </div>
+        <button class="btn-pix" onclick="copiarPix()">
+          <svg viewBox="0 0 24 24">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          Copiar Chave Pix
+        </button>
+        <p class="pix-ok" id="pix-ok">Chave Pix copiada com sucesso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTATO ══════════ -->
+  <section class="contato" id="contato">
+    <div class="sec-wrap">
+      <div class="con-grid">
+        <div>
+          <span class="con-ey reveal">Fale Conosco</span>
+          <h2 class="con-title reveal">Venha nos <span>Visitar</span></h2>
+
+          <div class="info-row reveal">
+            <div class="info-ico"><svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></div>
+            <div>
+              <span class="info-lbl">Endereço</span>
+              <span class="info-val">Acesso Pixoxo da Serra, 827<br>Balneário São José — SP</span>
+            </div>
+          </div>
+
+          <div class="info-row reveal d1">
+            <div class="info-ico"><svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg></div>
+            <div>
+              <span class="info-lbl">WhatsApp</span>
+              <!-- ⬇ SUBSTITUA PELO SEU NÚMERO ⬇ -->
+              <span class="info-val eb">em breve</span>
+            </div>
+          </div>
+
+          <div class="info-row reveal d2">
+            <div class="info-ico"><svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg></div>
+            <div>
+              <span class="info-lbl">E-mail</span>
+              <span class="info-val eb">Em breve — adicione seu e-mail aqui</span>
+            </div>
+          </div>
+
+          <div class="info-row reveal d3">
+            <div class="info-ico"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg></div>
+            <div>
+              <span class="info-lbl">Site</span>
+              <span class="info-val eb">Em breve — adicione seu domínio aqui</span>
+            </div>
+          </div>
+
+          <div class="info-row reveal d4">
+            <div class="info-ico"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <div>
+              <span class="info-lbl">Horários dos Cultos</span>
+              <span class="info-val">Sexta — Culto Forte às 20h<br>Sábado — Estudo Bíblico às 20h<br>Domingo — Culto da
+                Tarde às 18h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box reveal" id="form-contato">
+          <h3 class="form-title">Envie uma mensagem</h3>
+          <div class="form-grp">
+            <label>Nome</label>
+            <input type="text" id="f-nome" placeholder="Seu nome completo">
+          </div>
+          <div class="form-grp">
+            <label>WhatsApp ou E-mail</label>
+            <input type="text" id="f-contato-info" placeholder="Para respondermos você">
+          </div>
+          <div class="form-grp">
+            <label>Assunto</label>
+            <select id="f-assunto">
+              <option>Quero conhecer a Igreja</option>
+              <option>Informações sobre cultos</option>
+              <option>Pedido de oração</option>
+              <option>Ministérios e grupos</option>
+              <option>Outro assunto</option>
+            </select>
+          </div>
+          <div class="form-grp">
+            <label>Mensagem</label>
+            <textarea id="f-mensagem" placeholder="Escreva sua mensagem..."></textarea>
+          </div>
+          <button class="btn-form" id="btn-enviar" onclick="enviarForm()">
+            <svg viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Enviar mensagem
+          </button>
+          <p class="form-ok" id="form-success">Mensagem enviada com sucesso. Em breve entraremos em contato.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="foot-inner">
+      <div class="foot-top">
+        <div>
+          <div class="foot-brand">
+            <div class="foot-logo-circle">
+              <img src="img/logo-spj.png" alt="SPJ">
+            </div>
+            <div class="foot-brand-name">Igreja Evangélica<br>Subindo Para Jesus</div>
+          </div>
+          <p class="foot-desc">Uma comunidade de fé comprometida com a Palavra de Deus, o amor ao próximo e a expansão
+            do Reino de Deus em Balneário São José — SP.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#horarios">Horários</a></li>
+            <li><a href="#sobre">Sobre a Igreja</a></li>
+            <li><a href="#ministerios">Ministérios</a></li>
+            <li><a href="#colabore">Colabore</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Cultos</h4>
+          <ul>
+            <li><a href="#">Sexta — Culto Forte — 20h</a></li>
+            <li><a href="#">Sábado — Estudo Bíblico — 20h</a></li>
+            <li><a href="#">Domingo — Culto da Tarde — 18h</a></li>
+            <li><a href="#">Domingo — Salinha das Crianças</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p class="foot-copy">© <span id="footer-year">2025</span> Igreja Evangélica Subindo Para Jesus — Acesso Pixoxo
+          da Serra, 827 · Balneário São José, SP</p>
+        <div class="foot-sigla">S · P · J</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
